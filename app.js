@@ -1,6 +1,10 @@
 console.log("Starting app ....");
 
 const fs = require('fs');
+const os = require('os');
+
+var user = os.userInfo();
+console.log(user);
 
 // fs.appendFile('greetings.txt', 'Hello World!!', function(err) {
 //   if(err){
@@ -10,4 +14,4 @@ const fs = require('fs');
 
 // OR
 
-fs.appendFileSync('greetings.txt', 'Hello World!');
+// fs.appendFileSync('greetings.txt', 'Hello World!');
