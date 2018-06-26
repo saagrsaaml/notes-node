@@ -13,5 +13,8 @@ var user = os.userInfo();
 // });
 
 // OR
+// fs.appendFileSync('greetings.txt', `Hello ${user.username}! You are ${notes.age}`);
 
-fs.appendFileSync('greetings.txt', `Hello ${user.username}! You are ${notes.age}`);
+var res = notes.addNote();
+
+console.log(res);
