@@ -17,4 +17,7 @@ var user = os.userInfo();
 
 var res = notes.addNote();
 
+var result = notes.add(2,3)
+
 console.log(res);
+console.log(`Result: ${result}`);
