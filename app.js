@@ -9,8 +9,15 @@ const os = require('os');
 const _ = require('lodash');
 
 // require from own files
-const notes = require('./notes.js')
+const notes = require('./notes.js');
 
+// check if value passed is string
+console.log(_.isString(true));
+console.log(_.isString('sagar'));
+
+// remove duplicate values in an array
+var filteredArray = _.uniq(['sagar', 1, 'sagar', 1, 2, 3, 4]);
+console.log(filteredArray);
 
 
 // var user = os.userInfo();
