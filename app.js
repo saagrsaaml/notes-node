@@ -4,12 +4,17 @@ const fs = require('fs');
 
 const _ = require('lodash');
 const notes = require('./notes.js');
+const yargs = require('yargs');
 
+const argv = yargs.argv;
 const command = process.argv[2];
+
 console.log('Command: ', command);
+console.log('Process: ', process.argv);
+console.log('Yargs: ', argv);
 
 if (command === 'add') {
-  console.log('Adding new note.');
+  notes.addNote(argv.title, argv.body);
 } else if (command === 'list') {
   console.log('Listing all notes.')
 } else if (command === 'read') {
